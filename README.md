@@ -25,6 +25,6 @@ Deep Dream with Your Own Image
 To use your own image, you should copy it into a local directory on the Docker host
 and then mount it:
 
-    $ docker run -ti -p 8888:8888 -v /myfiles:/deepdream/deepdream/files
+    $ docker run -ti -p 8888:8888 -v /myfiles:/deepdream/deepdream/files saturnism/deepdream
 
 You can then refer to the file in IPython Notebook.
