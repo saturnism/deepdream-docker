@@ -36,7 +36,8 @@ RUN git clone https://github.com/BVLC/caffe
 RUN cd caffe && \
   cp Makefile.config.example Makefile.config && echo "CPU_ONLY := 1" >> Makefile.config && \
   make all -j2 
-RUN pip install cython
+RUN pip install -U pip
+RUN pip install cython jupyter
 RUN cd caffe && \
   pip install --requirement python/requirements.txt 
 RUN cd caffe && make pycaffe -j2
